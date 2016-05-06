@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>长春专利分析中级班报告-首页</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="Tutoring Responsive web template, Bootstrap Web Templates, Flat Web Templates, Andriod Compatible web template, 
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
+<link href="css/style.css" rel='stylesheet' type='text/css' />
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.js"></script>
+<!---- start-smoth-scrolling---->
+<script type="text/javascript" src="js/move-top.js"></script>
+<script type="text/javascript" src="js/easing.js"></script>
+<script type="text/javascript">
+			jQuery(document).ready(function($) {
+				$(".scroll").click(function(event){		
+					event.preventDefault();
+					$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+				});
+			});
+		</script>
+<!--start-smoth-scrolling-->
+<script type="text/javascript" src="http://cdn.hcharts.cn/jquery/jquery-1.8.3.min.js"></script>
+		<style type="text/css">
+${demo.css}
+		</style>
+		<script type="text/javascript">
+$(function () {
+    $('#container01').highcharts({
+        chart: {
+            type: 'spline'
+        },
+        title: {
+		    useHTML: Boolean,
+            text: '<B>申请量前20的申请人专利申请趋势</B>'
+        },
+        subtitle: {
+            text: '1994年~2014年'
+        },
+        xAxis: {
+            type: 'datetime',
+            dateTimeLabelFormats: {
+                month: '%b \'%y'
+            },
+            title: {
+                text: '时间'
+            }
+        },
+        yAxis: {
+            title: {
+                text: '申请量 (件)'
+            },
+            min: 0
+        },
+        tooltip: {
+            headerFormat: '<b>{series.name}</b><br>',
+            pointFormat: '{point.x:%y}年: {point.y:%f} 件'
+        },
+
+        plotOptions: {
+            spline: {
+                marker: {
+                    enabled: false
+                }
+            }
+        },
+
+        series: [{
+            name: '诺和诺德',
+            // Define the data points. All series have a dummy year
+            // of 1970/71 in order to be compared on the same x axis. Note
+            // that in JavaScript, months start at 0 for January, 1 for February etc.
+            data: [
+                [Date.UTC(1994, 0, 21), 2],
+                [Date.UTC(1995, 0, 4), 17],
+                [Date.UTC(1996, 0, 9), 10],
+                [Date.UTC(1997, 0, 27), 26],
+                [Date.UTC(1999, 0, 2), 21],
+                [Date.UTC(2001, 0, 26), 1],
+                [Date.UTC(2002, 0, 29), 1],
+                [Date.UTC(2004, 0, 11), 12],
+                [Date.UTC(2005, 0, 26), 3],
+                [Date.UTC(2006, 0, 3), 42],
+                [Date.UTC(2007, 0, 11), 7],
+                [Date.UTC(2008, 0, 25), 28],
+                [Date.UTC(2009, 0, 11), 4],
+                [Date.UTC(2010, 0, 11), 11],
+                [Date.UTC(2011, 0, 1), 13],
+                [Date.UTC(2012, 0, 5), 2],
+                [Date.UTC(2013, 0, 19),14],
+                [Date.UTC(2014, 0, 3), 20]
+            ]
+        }, {
+            name: '韩美',
+            data: [
+                [Date.UTC(2004, 0, 11), 5],
+                [Date.UTC(2006, 0, 3), 1],
+                [Date.UTC(2008, 0, 25), 26],
+                [Date.UTC(2009, 0, 11), 1],
+                [Date.UTC(2010, 0, 11), 14],
+                [Date.UTC(2011, 0, 1), 12],
+                [Date.UTC(2012, 0, 5), 38],
+                [Date.UTC(2013, 0, 19),49],
+                [Date.UTC(2014, 0, 3), 6]
+            ]
+        }, {
+            name: 'Amylin、礼来、Alkermes联盟',
+            data: [
+                [Date.UTC(1997, 0, 27), 6],
+				[Date.UTC(1998, 0, 27), 26],
+                [Date.UTC(1999, 0, 2), 6],
+				[Date.UTC(2000, 0, 2), 14],
+                [Date.UTC(2001, 0, 26), 9],
+                [Date.UTC(2002, 0, 29), 8],
+				[Date.UTC(2003, 0, 29), 31],
+                [Date.UTC(2004, 0, 11), 54],
+                [Date.UTC(2005, 0, 26), 33],
+                [Date.UTC(2006, 0, 3), 39],
+				[Date.UTC(2007, 0, 3), 17],
+				[Date.UTC(2008, 0, 3), 1],
+				[Date.UTC(2009, 0, 3), 16],
+				[Date.UTC(2010, 0, 3), 7],
+				[Date.UTC(2011, 0, 3), 4],
+                [Date.UTC(2012, 0, 5), 16],
+				[Date.UTC(2013, 0, 3), 5],
+				[Date.UTC(2014, 0, 3), 2],
+				]
+        }, {
+            name: '赛诺菲-安万特',
+            data: [
+                [Date.UTC(2006, 0, 3), 1],
+				[Date.UTC(2008, 0, 3), 1],
+				[Date.UTC(2009, 0, 3), 1],
+				[Date.UTC(2010, 0, 3), 27],
+				[Date.UTC(2011, 0, 3), 33],
+                [Date.UTC(2012, 0, 5), 11],
+				[Date.UTC(2013, 0, 3), 1],
+				[Date.UTC(2014, 0, 3), 10],
+            ]
+        }]
+    });
+$('#container02').highcharts({
+        chart: {
+            plotBackgroundColor: null,
+            plotBorderWidth: 0,
+            plotShadow: false
+        },
+        title: {
+            text: 'Browser<br>shares<br>2015',
+            align: 'center',
+            verticalAlign: 'middle',
+            y: 40
+        },
+        tooltip: {
+            pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
+        },
+        plotOptions: {
+            pie: {
+                dataLabels: {
+                    enabled: true,
+                    distance: -50,
+                    style: {
+                        fontWeight: 'bold',
+                        color: 'white',
+                        textShadow: '0px 1px 2px black'
+                    }
+                },
+                startAngle: -90,
+                endAngle: 90,
+                center: ['50%', '75%']
+            }
+        },
+        series: [{
+            type: 'pie',
+            name: 'Browser share',
+            innerSize: '50%',
+            data: [
+                ['Firefox',   10.38],
+                ['IE',       56.33],
+                ['Chrome', 24.03],
+                ['Safari',    4.77],
+                ['Opera',     0.91],
+                {
+                    name: 'Proprietary or Undetectable',
+                    y: 0.2,
+                    dataLabels: {
+                        enabled: false
+                    }
+                }
+            ]
+        }]
+    });
+
+$('#container03').highcharts({
+        chart: {
+            type: 'column'
+        },
+        title: {
+            text: '<b>主要国家糖尿病药物销售额</b>'
+        },
+        subtitle: {
+            text: '2010~2014'
+        },
+        xAxis: {
+            categories: [
+                '2010',
+                '2011',
+                '2012',
+                '2013',
+                '2014',
+                
+            ],
+            crosshair: true
+        },
+        yAxis: {
+            min: 0,
+            title: {
+                text: '销售额(百万美元)'
+            }
+        },
+        tooltip: {
+            headerFormat: '<span style="font-size:10px">{point.key} 年</span><table>',
+            pointFormat: '<tr><td style="color:{series.color};padding:0">{series.name}: </td>' +
+                '<td style="padding:0"><b>{point.y:.0f} 百万美元</b></td></tr>',
+            footerFormat: '</table>',
+            shared: true,
+            useHTML: true
+        },
+        plotOptions: {
+            column: {
+                pointPadding: 0.2,
+                borderWidth: 0
+            }
+        },
+        series: [{
+            name: '美国',
+            data: [17909, 20017, 20992, 23684, 30925]
+
+        }, {
+            name: '日本',
+            data: [3061, 3920, 4282, 3850, 3717]
+
+        }, {
+            name: '德国',
+            data: [1880, 2049, 2078, 2316, 2493]
+
+        }, {
+            name: '中国',
+            data: [904, 1152, 1521, 1808, 2070]
+
+        }]
+    });	
+	
+}
+
+);
+		</script>
+</head>
+<body>
+	<script src="http://999jfc.github.io/web/echarts/highcharts.js"></script>
+    <script src="file:///d:/desktopbk/Highcharts/highcharts.js"></script>
+    <script src="http://cdn.hcharts.cn/highcharts/modules/exporting.js"></script>
+	<!--start-header-->
+	
+	<div class="header" id="home">
+		<nav class="navbar navbar-default">
+			<div class="container-fluid">
+			<!-- Brand and toggle get grouped for better mobile display -->
+			
+			
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="index.html"><img src="images/logo.png" alt="" /></a>
+			</div>
+			<!-- Collect the nav links, forms, and other content for toggling -->
+			
+			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+				<ul class="nav navbar-nav">
+					<li class="active"><a href="index.html" class="hvr-bounce-to-top">首页<span class="sr-only">(current)</span></a></li>
+					<li><a href="about.html" class="hvr-bounce-to-top">产业发展报告</a></li>
+					<li><a href="services.html" class="hvr-bounce-to-top">检索报告</a></li>
+					<li><a href="typo.html" class="hvr-bounce-to-top">专利分析</a></li>
+					<li><a href="contact.html" class="hvr-bounce-to-top">小组成员</a></li>
+				</ul>
+				<div class="clearfix"></div>
+			</div>
+			
+			<!-- /.navbar-collapse -->
+			</div>
+			<!-- /.container-fluid -->
+		</nav>
+	</div>
+	
+	<!--end-header-->
+	<!--start-banner-->
+	<div class="banner">
+		<div class="container">
+			<section class="slider">
+				<div class="flexslider">
+					<ul class="slides">
+						<li>
+							<div class="banner-top">
+								<h1><b>糖尿病</b></h1>
+								<h2><b>发病率高，器官损害严重</b></h2>
+								<p>糖尿病是一组以高血糖为特征的代谢性疾病。高血糖是由于胰岛素分泌缺陷或其生物作用受损，或两者兼有引起。2013年，全球糖尿病患者人数已达3.82亿，其中90%为2型糖尿病患者。</p>
+								<div class="bnr-btn">
+									<a href="#xiaochuang" class="hvr-shutter-out-horizontal">继续阅读</a>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="banner-top">
+								<h1><b>胰高血糖素样肽-1</b></h1>
+								<h2><b>全新的治疗机制</b></h2>
+								<p>胰高血糖素样肽-1（GLP-1）是一种主要由肠道L细胞所产生的激素，属于一种肠促胰岛素（incretin）。 其生理作用包括： 促进胰脏胰岛β-细胞的胰岛素分泌。</p>
+								<div class="bnr-btn">
+									<a href="#" class="hvr-shutter-out-horizontal">继续阅读</a>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="banner-top">
+								<h1><b>新药开发</b></h1>
+								<h2><b>长效制剂创新集中</b></h2>
+								<p>研究已证实,肠促胰素以葡萄糖浓度依赖性方式促进胰岛β细胞分泌胰岛素,并减少胰岛α细胞分泌胰高血糖素(glucagon),从而降低血糖。正常人在进餐后,肠促胰素开始分泌,进而促进胰岛素分泌,以减少餐后血糖的波动</p>
+								<div class="bnr-btn">
+									<a href="#" class="hvr-shutter-out-horizontal">继续阅读</a>
+								</div>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</section>
+		</div>
+	</div>
+	<!--end-banner-->
+	<!--FlexSlider-->
+	<link rel="stylesheet" href="css/flexslider.css" type="text/css" media="screen" />
+	<script defer src="js/jquery.flexslider.js"></script>
+	<script type="text/javascript">
+    $(function(){
+      SyntaxHighlighter.all();
+    });
+    $(window).load(function(){
+      $('.flexslider').flexslider({
+        animation: "slide",
+        start: function(slider){
+          $('body').removeClass('loading');
+        }
+      });
+    });
+  </script>
+	<!--End-slider-script-->	
+	<!--start-provide-->
+	<div class="provide"><a id="xiaochuang"></a>
+		<div class="col-md-3 provide-left provide-one">
+			
+			<h3>发病率高</h3>
+			<p>全球糖尿病患者人数已达3.82亿，其中90%为2型糖尿病患者。中国糖尿病患者总人数达7200万。</p>
+		</div>
+		<div class="col-md-3 provide-left provide-two">
+			
+			<h3>并发症严重</h3>
+			<p>糖尿病时长期存在的高血糖，导致各种组织，特别是眼、肾、心脏、血管、神经的慢性损害、功能障碍。</p>
+		</div>
+		<div class="col-md-3 provide-left provide-tre">
+			
+			<h3>并发症出现机率高</h3>
+			<p>5年以上的糖尿病患者，出现并发症的几率在61%以上；10年以上的糖尿病患者，出现并发症的几率高达98%。</p>
+		</div>
+		<div class="col-md-3 provide-left provide-four">
+			
+			<h3>治疗困难</h3>
+			<p>糖尿病会增大患者罹患心脏疾病、中风和肾功能衰竭的风险。这会给中国的公共健康系统带来巨大压力。</p>
+		</div>
+		<div class="clearfix"></div>
+	</div>
+	<!--end-provide-->
+	
+	<div class="welcome">
+		<div class="container">
+			<div class="welcome-top">
+				<div class="col-md-6 welcome-left">
+					<h3>发病率</h3>
+					<h4>中国糖尿病发病率超11%</h4>
+					<p>全球糖尿病患者人数已达3.82亿，其中90%为2型糖尿病患者。中国糖尿病患者总人数达7200万。</p>
+					<p>中国人在身体质量指数(BMI)远低于美国人的情况下出现这种代谢疾病。这意味着经济的迅速发展，人们饮食习惯的改变和身体活动减少，导致与肥胖相关疾病提前出现。现在，有40%的18-29岁的青年人为糖尿病潜在人群，这些人罹患中风、心脏病和肾功能衰竭的风险增加。</p>
+					
+					
+				</div>
+				<!--发病地图2-->
+				<div class="col-md-6 welcome-left"  style="min-width: 310px; height: 400px; margin: 0 auto"><img src="images/number01.jpg" alt="" style="min-width: 310px; height: 400px; margin: 0 auto"/></div>
+				
+				<div class="col-md-6 welcome-left">
+					<h3>糖尿病治疗药物市场</h3>
+					<h4>容量巨大前景广阔</h4>
+					<p>据IMS数据库统计，2014年全球糖尿病市场规模近550亿美元，增长18.4%；2013年达到464亿美元，增长9.3%。虽然在2012年，其增长率仅有5.3%，但越来越多的新药和不断增多的糖尿病患者将继续推动本类药物销售额的增长，预计其未来将以10～15%的速度增长。</p>
+					<p>糖尿病市场中，美国所占的份额最多，约占全球糖尿病用药市场的50%左右，2014年更是达到56.2%。其次为日本，德国。中国排名第四，2014年中国所占份额为3.8%，较2011年增长了1.2%。2010-2014年主要国家糖尿病药物销售额见右图。</p>
+					
+					
+				</div>
+				<!--图表03-->
+				<div class="col-md-6 welcome-left" id="container03" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
+				<div class="col-md-6 welcome-left">
+					<h3>GLP-1类似物</h3>
+					<h4>后起之秀不容小觑</h4>
+					<p>人胰岛素及其类似物占糖尿病治疗药物的主导地位，其次为DPP-IV抑制剂，GLP-1激动剂。艾塞那肽（百泌达、Byetta）2010年全球销售额为710.2百万美元（美国地区销售559百万美元），比2009年下降11%，2011全球销售额约为678百万美元（美国地区销售额517.7百万美元）。</p>
+					<p>艾塞那肽的PLGA制剂（Bydureon）2011年欧洲上市，2012年1月美国上市，2011年Q4销售额为3.75百万美元，2012年Q1约为6.9百万美元（yahoo财经）  </p>
+					<p>利拉鲁肽（victoza）2009年上市，2011年销售额为5991百万丹麦克朗（9.7亿美元），比2010年（2317百万丹麦克朗）增长158.6%，诺和诺德声称其已经占领国际市场58%的份额。</p>
+					
+					<div class="w-btn">
+						<a href="#" class="hvr-shutter-out-horizontal">继续阅读</a>
+					</div>
+				</div>
+				<!--图表02-->
+				<div class="col-md-6 welcome-left" id="container02" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
+			    
+				<div class="clearfix"></div>
+			</div>
+		</div>
+	</div>
+	<!--end-welcome-->
+	
+	<div class="container">
+	    <div class="about-bottom">
+				   <center><img src="images/d2.jpg" alt="" style="max-width: 800px; min-width: 310px; margin: 0 auto"/></center>
+				   <h4>Sed hendrerit dui eget lacus</h4>
+				   <p>Duis semper sodales dictum. Praese fringilla eu.</p>
+	    </div>
+				<div class="clearfix"></div>
+		<div class="about-top heading">
+				<h1>About us</h1>
+		</div>
+	    <div class="distracted">
+			  <h3 class="ghj">检索过程</h3>
+				   <div class="well">
+					There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration
+				   </div>
+				   <div class="well">
+					It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here
+				   </div>
+				   <div class="well">
+					Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic
+				   </div>
+		</div>
+		<!--图表01-->
+	    <div class="col-md-6 welcome-left" id="container01" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
+	</div>
+	<!--start-join-->
+	<div class="join">
+		<div class="container">
+			<div class="join-main">
+				<div class="col-md-3 join-left">
+					<span class="glyphicon glyphicon-time" aria-hidden="false"></span>
+					<h4>massa blandit</h4>
+					<p>Proin fermentum diam eu massa blandit, congue finibus ante pulvinar. Aliquam lacinia odio eros.</p>
+				</div>
+				<div class="col-md-3 join-left">
+					<span class="glyphicon glyphicon-user" aria-hidden="true"></span>
+					<h4>congue finibus</h4>
+					<p>Proin fermentum diam eu massa blandit, congue finibus ante pulvinar. Aliquam lacinia odio eros.</p>
+				</div>
+				<div class="col-md-3 join-left">
+					<span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span>
+					<h4>Aliquam lacinia</h4>
+					<p>Proin fermentum diam eu massa blandit, congue finibus ante pulvinar. Aliquam lacinia odio eros.</p>
+				</div>
+				<div class="col-md-3 join-left">
+					<span class="glyphicon glyphicon-calendar" aria-hidden="true"></span>
+					<h4>placerat ipsum</h4>
+					<p>Proin fermentum diam eu massa blandit, congue finibus ante pulvinar. Aliquam lacinia odio eros.</p>
+				</div>
+				<div class="clearfix"></div>
+			</div>
+		</div>
+	</div>
+	<!--end-join-->
+    <div class="copyrights">Collect from <a href="http://www.cssmoban.com/" >企业网站模板</a></div>
+	<!--start-news-->
+	<div class="news">
+		<div class="container">
+			<div class="news-top">
+				<div class="col-md-8 news-left">
+					<div class="news-heading">
+						<h3>News and Announcements</h3>
+					</div>
+					<div class="news-bottom">
+						<h4>Excepteur sint occaecat cupidatat non proident</h4>
+						<p>Quisque at tellus ullamcorper, pharetra arcu a, suscipit purus. Nullam feugiat in augue in consequat. Sed ac dictum ligula, et pellentesque velit. In gravida eu felis sit amet molestie. Morbi sed ex ac enim finibus vulputate. Cras arcu magna, auctor ornare neque in, finibus tincidunt augue. </p>
+						<div class="news-one">
+							<div class="news-one-left">
+								<img src="images/n-1.jpg" alt="" />
+							</div>
+							<div class="news-one-right">
+								<h4>Morbi sed ex ac enim finibus vulputate. Cras arcu magna, auctor ornare neque in.</h4>
+								<p>Nullam egestas diam eu felis dignissim, vitae posuere ex pretium. Morbi quam purus, rhoncus eget enim sed, laoreet venenatis arcu. Curabitur vestibulum, orci pulvinar pretium cursus, diam ante pretium elit, at finibus nisl ligula vitae enim. eu eleifend enim condimentum ac.</p>
+							</div>
+							<div class="clearfix"></div>
+						</div>
+						<div class="news-one">
+							<h4>Nunc molestie venenatis nisi nec pharetra. Morbi nulla odio, commodo a facilisis sed, tristique eget ipsum.</h4>
+							<p>Cras gravida metus vel tortor porttitor pretium. Cras posuere sem ut neque commodo aliquet. Proin in dui tempor, volutpat velit congue, mollis felis. Proin quis ante vitae nunc cursus interdum. Sed nec placerat risus. Sed rhoncus nibh et accumsan placerat. Nunc nec libero a dui cursus mattis placerat a urna.</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4 news-right">
+					<div class="news-heading">
+						<h3>Upcoming Events</h3>
+					</div>
+					<div class="news-btm">
+						<div class="news-1">
+							<img src="images/n-2.jpg" alt="" />
+							<div class="n-1">
+								<h5>Mauris eros felis</h5>
+								<p>Mauris varius consequat tortor vitae</p>
+							</div>
+						</div>
+						<div class="news-1">
+							<img src="images/n-3.jpg" alt="" />
+							<div class="n-1">
+								<h5>Mauris eros felis</h5>
+								<p>Mauris varius consequat tortor vitae</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="clearfix"></div>
+			</div>
+		</div>
+	</div>
+	<!--end-news-->
+	<!--start-teacher-->
+	<div class="teacher">
+		<div class="container">
+			<div class="teacher-top">
+				<h3>our staff</h3>
+			</div>
+			<div class="teacher-main">
+				<div class="teacher-left">
+					<img src="images/t-1.jpg" alt="" />
+					<h4>Sarah Smith</h4>
+					<p>Nunc nec libero a dui cursus mattis placerat a urna.</p>
+				</div>
+				<div class="teacher-left">
+					<img src="images/t-2.jpg" alt="" />
+					<h4>Milla Row</h4>
+					<p>Nunc nec libero a dui cursus mattis placerat a urna.</p>
+				</div>
+				<div class="teacher-left">
+					<img src="images/t-3.jpg" alt="" />
+					<h4>John Franklin</h4>
+					<p>Nunc nec libero a dui cursus mattis placerat a urna.</p>
+				</div>
+				<div class="teacher-left">
+					<img src="images/t-4.jpg" alt="" />
+					<h4>Amina Wilson</h4>
+					<p>Nunc nec libero a dui cursus mattis placerat a urna.</p>
+				</div>
+				<div class="teacher-left">
+					<img src="images/t-5.jpg" alt="" />
+					<h4>Jack Jones</h4>
+					<p>Nunc nec libero a dui cursus mattis placerat a urna.</p>
+				</div>
+				<div class="clearfix"></div>
+			</div>
+		</div>
+	</div>
+	<!--end-teacher-->
+	<!--start-footer-->
+	<div class="footer">
+		<div class="container">
+			<div class="footer-main">
+				<div class="col-md-4 footer-left">
+					<span class="glyphicon glyphicon-map-marker map-marker" aria-hidden="true"></span>
+					<p>The company name, <span>Lorem ipsum dolor,</span> Glasglow Dr 40 Fe 72.</p>
+				</div>
+				<div class="col-md-4 footer-left">
+					<span class="glyphicon glyphicon-phone map-marker" aria-hidden="true"></span>
+					<p>+1 800 603 6035 <span>+1 900 300 1320</span> </p>
+				</div>
+				<div class="col-md-4 footer-left">
+					<p class="footer-class">Copyright &copy; 2016.LCH All rights reserved.</p>
+					<ul>
+						<li><a href="#"><span class="fb"></span></a></li>
+						<li><a href="#"><span class="twit"></span></a></li>
+						<li><a href="#"><span class="rss"></span></a></li>
+						<li><a href="#"><span class="ggl"></span></a></li>
+					</ul>
+				</div>
+				<div class="clearfix"></div>
+			</div>
+		</div>
+		<script type="text/javascript">
+									$(document).ready(function() {
+										/*
+										var defaults = {
+								  			containerID: 'toTop', // fading element id
+											containerHoverID: 'toTopHover', // fading element hover id
+											scrollSpeed: 1200,
+											easingType: 'linear' 
+								 		};
+										*/
+										
+										$().UItoTop({ easingType: 'easeOutQuart' });
+										
+									});
+								</script>
+		<a href="#home" id="toTop" class="scroll" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+	</div>
+	<!--end-footer-->
+</body>
+</html>

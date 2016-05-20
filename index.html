@@ -149,7 +149,7 @@ $('#container02').highcharts({
             plotShadow: false
         },
         title: {
-            text: 'Browser<br>shares<br>2015',
+            text: '2015年<br>各类降糖药份额',
             align: 'center',
             verticalAlign: 'middle',
             y: 40
@@ -175,14 +175,15 @@ $('#container02').highcharts({
         },
         series: [{
             type: 'pie',
-            name: 'Browser share',
+            name: '降糖药物份额',
             innerSize: '50%',
             data: [
-                ['Firefox',   10.38],
-                ['IE',       56.33],
-                ['Chrome', 24.03],
-                ['Safari',    4.77],
-                ['Opera',     0.91],
+                ['各类胰岛素',   56.6],
+                ['DPP-4抑制剂',       23.8],
+                ['GLP-1类似物', 10.3],
+                ['SGLT2抑制剂',    5.1],
+                ['二甲双胍',     1.2],
+				['阿卡波糖',     1.5],
                 {
                     name: 'Proprietary or Undetectable',
                     y: 0.2,
@@ -265,39 +266,7 @@ $('#container03').highcharts({
     <script src="http://cdn.hcharts.cn/highcharts/modules/exporting.js"></script>
 	<!--start-header-->
 	
-	<div class="header" id="home">
-		<nav class="navbar navbar-default">
-			<div class="container-fluid">
-			<!-- Brand and toggle get grouped for better mobile display -->
-			
-			
-			<div class="navbar-header">
-				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-				<span class="sr-only">Toggle navigation</span>
-				<span class="icon-bar"></span>
-				<span class="icon-bar"></span>
-				<span class="icon-bar"></span>
-				</button>
-				<a class="navbar-brand" href="index.html"><img src="images/logo.png" alt="" /></a>
-			</div>
-			<!-- Collect the nav links, forms, and other content for toggling -->
-			
-			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-				<ul class="nav navbar-nav">
-					<li class="active"><a href="index.html" class="hvr-bounce-to-top">首页<span class="sr-only">(current)</span></a></li>
-					<li><a href="about.html" class="hvr-bounce-to-top">产业发展报告</a></li>
-					<li><a href="services.html" class="hvr-bounce-to-top">检索报告</a></li>
-					<li><a href="typo.html" class="hvr-bounce-to-top">专利分析</a></li>
-					<li><a href="contact.html" class="hvr-bounce-to-top">小组成员</a></li>
-				</ul>
-				<div class="clearfix"></div>
-			</div>
-			
-			<!-- /.navbar-collapse -->
-			</div>
-			<!-- /.container-fluid -->
-		</nav>
-	</div>
+	
 	
 	<!--end-header-->
 	<!--start-banner-->
@@ -416,9 +385,9 @@ $('#container03').highcharts({
 					<p>艾塞那肽的PLGA制剂（Bydureon）2011年欧洲上市，2012年1月美国上市，2011年Q4销售额为3.75百万美元，2012年Q1约为6.9百万美元（yahoo财经）  </p>
 					<p>利拉鲁肽（victoza）2009年上市，2011年销售额为5991百万丹麦克朗（9.7亿美元），比2010年（2317百万丹麦克朗）增长158.6%，诺和诺德声称其已经占领国际市场58%的份额。</p>
 					
-					<div class="w-btn">
+					<!--<div class="w-btn">
 						<a href="#" class="hvr-shutter-out-horizontal">继续阅读</a>
-					</div>
+					</div>-->
 				</div>
 				<!--图表02-->
 				<div class="col-md-6 welcome-left" id="container02" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
@@ -567,15 +536,21 @@ if (option && typeof option === "object") {
 <div class="welcome">
 	<div class="container">
 	    <div class="welcome-top">
-			<div class="col-md-6 welcome-left" style="width: 40%">
-					<h3>申请国分析</h3>
+			<div class="col-md-6 welcome-left" >
+					<h3>数据分析</h3>
 					<h4>发达国家占主导</h4>
-					<p>美国位于第一位</p>
+					<p>从各国申请量上看，美国无疑是拥有GLP-1类似物相关专利申请最多的国家，申请量约占全部申请的22%，同时看到中国也成为主要的专利申请国，这也从另一侧面说明是中国已成为全球重要降糖药物市场。</p>
+			        <h4>巨头各领风骚</h4>
+					<p>从申请人及申请的趋势看,几大生产商各领风骚，诺和诺德作为老牌的降糖药物生产商上世纪90年代即开始在该领域进行布局，2000年初沉寂一段时间后持续申请，积累了数量可观的专利。礼来、Amylin、Alkermes联盟虽然各自都有申请侧重，从整体看2000年初是其最高产的年份。赛诺菲-安万特和韩美都是后起之秀，近些年才在该领域涉足，但是潜力不可忽视。</p>
+			        <h4>制剂研究是重点</h4>
+					<p>从专利申请领域方面看，制剂剂型研究是整个GLP-1类似物的重点，占据了申请量的近一半，而在一般认为比较重点的类似物改造方面相比较而言就相形见绌了，说明如何让蛋白药物更好地起效是更加重要的也更困难。</p>
 			</div>		
-	        <div class="col-md-6 welcome-right" id="container05" style="height: 500px; width: 60%"></div>
+	        <div class="col-md-6 welcome-left" id="container05" style="height: 500px;"></div> 
 	    </div>
 	</div>
-</div>	 
+</div>	
+  
+  
        <script type="text/javascript" src="http://999jfc.github.io/web/echarts/echarts.all.js"></script>
 	   <script type="text/javascript" src="http://999jfc.github.io/web/echarts/world.js"></script>
        <script type="text/javascript">
@@ -702,7 +677,7 @@ latlong.KI = {'latitude':1.4167, 'longitude':173};
 latlong.KM = {'latitude':-12.1667, 'longitude':44.25};
 latlong.KN = {'latitude':17.3333, 'longitude':-62.75};
 latlong.KP = {'latitude':40, 'longitude':127};
-latlong.KR = {'latitude':37, 'longitude':127.5};
+latlong.KR = {'latitude':37, 'longitude':127};
 latlong.KW = {'latitude':29.3375, 'longitude':47.6581};
 latlong.KY = {'latitude':19.5, 'longitude':-80.5};
 latlong.KZ = {'latitude':48, 'longitude':68};
@@ -927,7 +902,7 @@ option = {
         }
     },
     geo: {
-        name: 'World Population (2010)',
+        name: '专利申请国家分布',
         type: 'map',
         map: 'world',
         roam: true,
@@ -997,7 +972,7 @@ if (option && typeof option === "object") {
 	<div class="teacher">
 		<div class="container">
 			<div class="teacher-top">
-				<h3>小组成员</h3>
+				<h3>长春中级班一期第三组成员</h3>
 			</div>
 			
 			<div class="teacher-main">
@@ -1013,13 +988,13 @@ if (option && typeof option === "object") {
 				</div>
 				<div class="teacher-left">
 					<img src="images/t-3.jpg" alt="" />
-					<h4>纪晓影</h4>
-					<p>长春百益制药有限责任公司</p>
+					<h4>李刚 </h4>
+					<p>金钵机电</p>
 				</div>
 				<div class="teacher-left">
 					<img src="images/t-4.jpg" alt="" />
-					<h4>李刚</h4>
-					<p>金钵机电</p>
+					<h4>纪晓影 </h4>
+					<p>长春百益制药有限责任公司</p>
 				</div>
 				
 				<div class="clearfix"></div>
